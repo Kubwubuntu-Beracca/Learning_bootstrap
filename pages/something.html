@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something</title>
+</head>
+<body>
+    <h1>Product List</h1>
+    <ul id="product-list">
+      <!-- Product list items will be dynamically generated here -->
+    </ul>
+    <div>
+        <button onclick="goToHome()">Home</button>
+    </div>
+   
+    <script>
+ const products = [
+      { name: "Product 1", price: "$10.99" },
+      { name: "Product 2", price: "$19.99" },
+      { name: "Product 3", price: "$14.50" },
+      // Add more products as needed
+    ];
+    function goToHome() {
+         window.location.href='index.html'
+        }
+        function generateProductList() {
+            const productListElement = document.getElementById("product-list");
+            for(const product of products){
+                const listItem=document.createElement("li");
+                listItem.textContent=product['name'] +'-'+ product['price'];
+                productListElement.appendChild(listItem);
+            }
+        }
+        generateProductList();
+    </script>
+</body>
+</html>
