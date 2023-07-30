@@ -20,14 +20,28 @@
   Title: card-title class
   Subtitle: card-subtitle class
   Text: card-text class
+  Wrapp title,sutitle,text in card-body
   Image: card-img-top/bottom image tag 
   Image overlay: the body at the top of the picture 45
-  All this will be wrapped in card-body
+  Header: 
   
  -->
-
+  <!-- Card with image -->
   <div class="card" style="width: 300px;">
    <img class="card-img-top" src="/images/placeholder.png">
+   <div class="card-body">
+    <h2 class="card-title">Title</h2>
+    <span class="card-subtitle" style="color: grey;">Subtitle</span>
+    <div class="card-text">
+     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam sed doloremque enim? Culpa recusandae sapiente
+     ipsum nam explicabo aut vitae, consectetur nostrum tempore perspiciatis quis provident, debitis at vero laudantium?
+    </div>
+   </div>
+  </div>
+
+  <!-- Card with header -->
+  <div class="card" style="width: 300px;">
+   <div class="card-header">Header</div>
    <div class="card-body">
     <h2 class="card-title">Title</h2>
     <span class="card-subtitle" style="color: grey;">Subtitle</span>
