@@ -48,7 +48,7 @@
                 <input type="checkbox" class="form-check-input">
                 <label class="form-check-label">Email</label>
             </div>
-            <!-- <button>Submit</button> -->
+            <button>Submit</button>
             <div class="div"></div>
             <div class="spacer">
                 <p>--------------</p>
@@ -104,26 +104,14 @@
                     <p></p>
 
                 </div>
-                <!-- <button>Submit</button> -->
+                <button>Submit</button>
             </div>
         </form>
         <div class="spacer">
             <p></p>
 
         </div>
-        <p>CUSTOM FORM VALIDATION</p>
-        <form novalidate>
-            <!-- Hard coded validation 
-            class="form-control is-valid" or invalid -->
-            <div class="form-floating">
-                <input type="text" class="form-control" placeholder="Place email here.." required>
-                <label type="email" i>Email</label>
-                <div class="spacer">
-                    <p></p>
 
-                </div>
-                <button>Submit</button>
-            </div>
         </form>
     </div>
 
@@ -136,18 +124,8 @@
         <button onclick="goToHome()">Home</button>
     </div>
     <script>
-        // custom validation
-        const form = document.querySelector('form')
-        form.addEventListener('submit', e => {
-            if (!form.checkValidity()) {
-                e.preventDefault()
-            } else {
-                form.classList.add('was-validated')
-            }
-        })
-
         function goToHome() {
-            window.location.href = '../index.html'
+            window.location.href = '/index.html'
         }
     </script>
 </body>
